@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html>
+
+<!-- Head Start -->
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Unified Reinforcement and Imitation Learning for Vision Language Models">
+  <meta property="og:title" content="Unified Reinforcement and Imitation Learning"/>
+  <meta property="og:description" content="Reinforcement learning small vision language models while imitating large vision language models"/>
+  <meta property="og:url" content=""/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="figures/figure2.png" />
+  <meta property="og:image:width" content="2048"/>
+  <meta property="og:image:height" content="2048"/>
+
+
+  <meta name="twitter:title" content="Unified Reinforcement and Imitation Learning for Vision Language Models">
+  <meta name="twitter:description" content="Reinforcement learning small vision language models while imitating large vision language models">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="figures/figure2.png">
+  <meta name="twitter:card" content="Reinforcement learning small vision language models while imitating large vision language models">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Vision Language Models, Reinforcement Learning, and Imitation Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Unified Reinforcement and Imitation Learning for Vision Language Models</title>
+  <link rel="shortcut icon" type="image/png" href="https://www.nvidia.com/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="css/others.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<!-- Head End -->
+
+<!-- Body Start -->
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop is-max-mobile">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title" style="font-size: 30pt;">
+              Unified <strong>R</strong>einforcement and <strong>I</strong>mitation <strong>L</strong>earning 
+              <br>for Vision Language Models
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://sites.google.com/view/byungkwanlee">Byung-Kwan Lee</a><sup>1,2*</sup>&nbsp&nbsp&nbsp
+              </span>
+              <span class="author-block">
+                <a href="https://ryohachiuma.github.io/">Ryo Hachiuma</a><sup>1</sup>&nbsp&nbsp&nbsp
+              </span>
+              <span class="author-block">
+                <a href="https://www.ivllab.kaist.ac.kr/ivylab-ivllab">Yong Man Ro</a><sup>2</sup>&nbsp&nbsp&nbsp
+              </span>
+              <br>
+              <span class="author-block">
+                <a href="https://vllab.ee.ntu.edu.tw/ycwang.html">Yu-Chiang Frank Wang</a><sup>1,3</sup>&nbsp&nbsp&nbsp
+              </span>
+              <span class="author-block">
+                <a href="https://kristery.github.io/">Yueh-Hua Wu</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-4 publication-authors">
+            <span class="eql-cntrb">
+              <br>
+                <small>
+                <sup>*</sup>Work Done during Internship
+                </small>
+            </span>
+            </div>
+
+            <!-- <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>NVIDIA,&nbsp&nbsp&nbsp&nbsp<sup>2</sup>KAIST,&nbsp&nbsp&nbsp&nbsp<sup>3</sup>NTU</span>
+            </div> -->
+
+            <!-- Logos -->
+            <div class="logos">
+                1<img src="logo/nvidia-logo-horz.png" alt="NVIDIA Logo" class="nvidia-logo">
+                2<img src="logo/kaist_logo.png" alt="KAIST Logo" class="kaist-logo">
+                &nbsp&nbsp
+                3<img src="logo/ntu_logo.png" alt="NTU Logo" class="ntu-logo">
+                <br>
+                <div class="conference">-NeurIPS 2025 Preparation-</div>
+              </div>
+
+            <div class="column has-text-centered">
+            <div class="publication-links">
+
+            <!-- Arxiv PDF link -->
+            <span class="link-block">
+            <a href=""
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+                <i class="fas fa-file-pdf"></i>
+            </span>
+            <span>Paper</span>
+            </a>
+            </span>
+            
+            &nbsp;
+
+            <!-- Github link -->
+            <span class="link-block">
+              <a href=""
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fab fa-github"></i>
+              </span>
+              <span>Code (Coming Soon!)</span>
+              </a>
+              </span>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="subtitle has-text-centered"
+      style="margin-top: 10pt; font-size: 20pt; color: #1690b6; font-weight: 1000;">
+      ▶️ Overview Video (Sound)
+      </div>
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="video.mp4"
+        type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper Summary -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop is-max-mobile">
+  <div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+  <div class="content has-text-justified">
+      <span class="heading">Importance of RIL.</span>
+Vision-language models (VLMs) have rapidly emerged from the success of instruction-tuned large language models, enabling multimodal understanding by generating human-like, visually grounded text responses 
+. Yet most advances—whether by scaling up model size, enlarging instruction datasets, or adding architectural and “think-answer” reasoning modules—dramatically increase inference latency and memory demands, making such powerful VLMs impractical for mobile or other resource-constrained environments 
+. To overcome these challenges, we introduce Unified Reinforcement and Imitation Learning (RIL), a training algorithm that forgoes architectural changes and verbose reasoning steps by teaching a compact “student” VLM to emulate a larger “teacher” through an LLM-based discriminator that issues similarity rewards, combined with reinforcement signals for factual accuracy, thus yielding lightweight models with state-of-the-art performance and low latency.      
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<!-- Image with caption -->
+<section class="section hero is-small">
+<div class="container is-max-desktop is-max-mobile">
+<figure class="image-container">
+  <div class="zoomcaption">🔍 Click to zoom in</div>
+  <img class="clickable-image" src="figures/figure1.png">
+  <figcaption><br>Figure 1: Showing the performance improvements (%) of Qwen2.5-VL-7B [1] across vision-language evaluation benchmarks and
+    the average scores for 14 evaluation benchmarks used in Table 1. Note that, we conduct RL on GRPO and advanced GRPO, Dr.GRPO, with only answer rewards from LLM-as-a-Judge
+    and we present RIL based on similarity rewards from single or multi large teacher VLMs and simultaneously answer rewards.
+  </figcaption>
+</figure>
+</div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop is-max-mobile">
+  <div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+  <div class="content has-text-justified">
+      <span class="heading">Related Works.</span>
+      Imitation Learning (IL) in robotics aims to replicate expert behavior.
+      Generative Adversarial Imitation Learning (GAIL) is a key framework that uses a generator to mimic expert actions/trajectories and a discriminator to distinguish them.
+      GAIL utilizes adversarial training to align the generator's behavior with the expert's, evaluating performance via discriminator scores without explicit reward functions.
+      A modified our approach, Reinforcement and Imitation Learning (RIL), is proposed for Vision and Language Models (VLMs) with four key modifications: combining GRPO and GAIL with explicit reward design, stabilizing output scores, using an LLM-as-a-Judge for reward assessment, and updating student VLMs with generated text responses from teacher VLMs via GRPO. RIL stabilizes training, allows student VLMs to potentially outperform teacher VLMs, and doesn't require explicit think-answer processes.
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+
+
+<!-- Image with caption -->
+<section class="section hero is-small">
+<div class="container is-max-desktop is-max-mobile">
+<figure class="image-container">
+  <div class="zoomcaption">🔍 Click to zoom in</div>
+  <img class="clickable-image" src="figures/figure2.png">
+  <figcaption><br>Figure 2: Comparing RIL-applied VLMs based on multi large VLMs with diverse open- and closedsource
+VLMs, under average performance of numerous vision-language evaluation benchmarks.
+  </figcaption>
+</figure>
+</div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop is-max-mobile">
+  <div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+  <div class="content has-text-justified">
+      <span class="heading">Rewards to Compute:</span>
+      RIL uses two binary reward signals for each generated response o_i to a prompt q:
+      <ul>
+        <li>
+          <b>Similarity Reward:</b> 1(D(q, o_i) < 0.5) where D is the discriminator trained to distinguish student from teacher outputs, assigning one score below 0.5 when the student's responses is similar with teacher's ones.
+        </li>
+        <li>
+          <b>Answer Reward:</b> LLM-as-a-Judge(q, a, o_i) where the LLM-Judge evaluates the factual correctness of the response o_i given the question q and the ground-truth answer a, awarding 1 if correct.
+        </li>
+      </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<!-- Image with caption -->
+<section class="section hero is-small">
+<div class="container is-max-desktop is-max-mobile">
+<figure class="image-container">
+  <div class="zoomcaption">🔍 Click to zoom in</div>
+  <img class="clickable-image" src="figures/figure3.png">
+  <figcaption><br>Figure 3: Illustrating training dynamics of small VLMs during RIL, where (Left) showing the
+evolution of similarity rewards over training iterations and (Mid) accuracy rewards obtained using
+LLM-as-a-Judge, ensuring that generated responses are both contextually appropriate and factually
+correct. (Right) displaying the overall average performance of evaluation benchmarks
+  </figcaption>
+</figure>
+</div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop is-max-mobile">
+  <div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+  <div class="content has-text-justified">
+      <span class="heading">Training Overview:</span>
+      RIL training begins by warm-starting the student VLM via supervised fine-tuning and pretraining a binary discriminator to distinguish student from teacher outputs; thereafter, each training batch alternates between (1) rolling out a set of student responses alongside cached teacher responses, (2) updating the discriminator on these mixed examples to sharpen its ability to tell them apart, (3) computing a combined reward for each response—comprising the discriminator's similarity score plus an LLM-as-a-Judge's factuality assessment—and (4) updating the student policy via Dr.GRPO (a PPO-style algorithm with clipping and a KL penalty) to maximize expected cumulative rewards, all executed with vLLM for fast generation and a multi-GPU DeepSpeed setup—thereby endowing a compact student model with both teacher-like style and high answer accuracy without added inference latency.
+
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+
+<!-- Image with caption -->
+<section class="section hero is-small">
+<div class="container is-max-desktop is-max-mobile">
+<figure class="image-container">
+  <div class="zoomcaption">🔍 Click to zoom in</div>
+  <img class="clickable-image" src="figures/figure4.png">
+  <figcaption><br>Figure 4: Comparing RIL-applied VLMs with large size open-source and closed-source VLMs.
+  </figcaption>
+</figure>
+</div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop is-max-mobile">
+  <div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+  <div class="content has-text-justified">
+      <span class="heading">Algorithm.</span> The algorithm starts by loading a pre-trained student model and a pre-trained binary discriminator, as well as a frozen set of teacher-generated responses.
+      For each batch of image-question pairs, it first makes a copy of the student model and uses it to generate a small set of candidate rollout answers,
+      while retrieving the corresponding teacher answers from the cache memory. It then refines the discriminator by training it to tell apart the student's outputs from the teacher's over several passes.
+      Once the discriminator is sharpened, the algorithm scores all student and teacher outputs using both the discriminator's judgment and an external language-model judge, turning these scores into reward signals.
+      Finally, it updates the student model itself—again over several passes—using a reinforcement-style optimizer that seeks to maximize those combined rewards.      
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+<!-- Image with caption -->
+<section class="section hero is-small">
+<div class="container is-max-desktop is-max-mobile">
+<figure class="image-container">
+  <div class="zoomcaption">🔍 Click to zoom in</div>
+  <img class="clickable-image" src="figures/figure5.png">
+</figure>
+</div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop is-max-mobile">
+  <div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+  <div class="content has-text-justified">
+    <span class="heading">Limitation:</span>
+    RIL is the post-instruction-tuning alignment phase, and it has not yet been integrated into the very first visual instruction-tuning stage—meaning its discriminator-driven alignment benefits aren't leveraged early on in pre-training-like early stage, which could further improve model instruction following.
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+
+<!-- Citation for This Template -->
+<footer class="footer">
+<div class="container">
+<div class="columns is-centered">
+    <div class="column is-8">
+    <div class="content">
+
+        <p>
+        This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+        You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>.
+        </p>
+
+    </div>
+    </div>
+</div>
+</div>
+</footer>
+
+
+<!-- Java Script -->
+<script>
+  // Get all images with the class 'clickable-image'
+  const images = document.querySelectorAll(".clickable-image");
+
+  // Create a modal for the zoom effect
+  const modal = document.createElement("div");
+  modal.className = "fullscreen-modal";
+  document.body.appendChild(modal);
+
+  const closeButton = document.createElement("div");
+  closeButton.className = "close-btn";
+  closeButton.innerHTML = "&times;";
+  modal.appendChild(closeButton);
+
+  const fullscreenImage = document.createElement("img");
+  modal.appendChild(fullscreenImage);
+
+  // Add event listeners to all images
+  images.forEach((image) => {
+    image.addEventListener("click", () => {
+      fullscreenImage.src = image.src; // Set the modal image to the clicked image
+      modal.style.display = "flex";
+    });
+  });
+
+  // Close the modal on close button click
+  closeButton.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Close the modal on outside click
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+
+
+// slider
+const image_list = [
+    "figures/text/1.png",
+    "figures/text/2.png",
+    "figures/text/3.png",
+    "figures/text/4.png",
+    "figures/text/5.png",
+    "figures/text/6.png",
+    "figures/text/7.png",
+    "figures/text/8.png",
+    "figures/text/9.png",
+    "figures/text/10.png",
+    "figures/text/11.png",
+    "figures/text/12.png"
+];
+
+let currentIndex = 0;
+
+const sliderImage = document.getElementById("slider-image");
+const totalImages = image_list.length;
+
+// 이미지 변경 함수
+function showImage(index) {
+    sliderImage.src = image_list[index]; // 이미지만 즉시 변경
+}
+
+// 다음 이미지 표시
+function showNextImage() {
+    currentIndex = (currentIndex + 1) % totalImages;
+    showImage(currentIndex);
+}
+
+// 이전 이미지 표시
+function showPreviousImage() {
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    showImage(currentIndex);
+}
+
+// 버튼 클릭 이벤트
+document.querySelector(".left-button").addEventListener("click", showPreviousImage);
+document.querySelector(".right-button").addEventListener("click", showNextImage);
+
+// 키보드 이벤트
+document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+        showPreviousImage();
+    } else if (event.key === "ArrowRight") {
+        showNextImage();
+    }
+});
+
+</script>
+
+
+<!-- Body End -->
+</body>
+<!-- Html End -->
+</html>
