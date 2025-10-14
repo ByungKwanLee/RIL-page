@@ -140,13 +140,13 @@ strong{
 }
 
 .conference{
-  font-size: larger;
+  font-size: 28px;
   color: rgb(9, 63, 128) !important;
   font-family: 'Google Sans', sans-serif;
   text-transform: none;
   display: inline;
   font-weight: 1000;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .content a{
